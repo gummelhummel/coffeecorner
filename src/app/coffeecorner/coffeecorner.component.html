@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-coffee">
+  <span class="navbar-text">
+    <b><i class="fa fa-coffee" aria-hidden="true"></i> Coffeecorner</b>
+  </span>
+</nav>
+<div class="container-fluid">
+  <div class="card-columns">
+    <div class="card text-white bg-coffee" *ngFor="let junky of junkys">
+      <app-junky [price]="0.25" [junky]="junky"></app-junky>
+    </div>
+  </div>
