@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row dashboard-row text-light">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card bg-trans dashboard-card">
+                <div class="card-header bg-trans">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item bg-trans">
+                            <a class="nav-link bg-trans" routerLinkActive="active" routerLink="/registration">Registration</a>
+                        </li>
+                        <li class="nav-item bg-trans">
+                            <a class="nav-link bg-trans" routerLinkActive="active" routerLink="/login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

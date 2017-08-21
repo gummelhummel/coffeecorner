@@ -2,13 +2,14 @@
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/font-awesome/scss/font-awesome';
-html, body {
-    background: url("assets/coffee_beans.jpg") top center fixed no-repeat;
-    -webkit-background-size: 100% 100vh;
-    -moz-background-size: 100% 100vh;
-    -o-background-size: 100% 100vh;
-    background-size: 100% 100vh;
-
+body {
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
 }
 .float-left {
     float: left;

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Junky } from '../models';
+import { Junky } from '../../';
 
 @Component({
   selector: 'app-junky',

@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CoffeecornerComponent } from './coffeecorner/coffeecorner.component';
+import { CoffeecornerRoutingModule } from './coffeecorner/';
+import { DashboardRoutingModule } from './dashboard';
 
 const routes: Routes = [
-  { path: '', component: CoffeecornerComponent }
+  { path: '', component: DashboardRoutingModule },
+  { path: 'coffeecorner', component: CoffeecornerRoutingModule }
 ];
 
 @NgModule({
