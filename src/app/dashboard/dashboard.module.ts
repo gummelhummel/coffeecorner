@@ -5,6 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { DashboardComponent } from './dashboard.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { DashboardComponent } from './dashboard.component';
   declarations: [
     LoginComponent,
     RegistrationComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavbarComponent
   ],
   exports: [
     DashboardRoutingModule
