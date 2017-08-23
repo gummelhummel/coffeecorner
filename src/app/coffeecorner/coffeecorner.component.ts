@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer } from '@angular/core';
-import { Junky } from '../models';
+import { Junky, Cup } from '../models';
 import { BackgroundImageService } from '../';
 
 @Component({
@@ -17,8 +17,13 @@ export class CoffeecornerComponent implements OnInit {
 
   ngOnInit() {
     this.biS.setBackgroundImage(this.ren, 'beans');
+    let cups: Cup[];
     for (let i = 0; i < 15; i++) {
-      this.junkys.push(new Junky(i + 'Langer Nachname', Math.ceil(Math.random() * i), i + 'test@test.de'));
+      cups = [];
+      for (let c = 0; c < Math.ceil(Math.random() * i); c++) {
+        cups.push(new Cup(new Date()));
+      }
+      this.junkys.push(new Junky(i + 'Langer Nachname', i + 'test@test.de', 1234, (i + 1).toString(), cups));
     }
   }
 
