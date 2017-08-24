@@ -16,7 +16,7 @@ export class Coffeecorner {
     }
 
     removeJunky(junkyToRemove: Junky): boolean {
-        if (junkyToRemove.score == 0) {
+        if (junkyToRemove.cups.length == 0) {
             let index = this.junkys.findIndex((junky) => { return junky == junkyToRemove });
             this.junkys.splice(index, 1);
             return true;
