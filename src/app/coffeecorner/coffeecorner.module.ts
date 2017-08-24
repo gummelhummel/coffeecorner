@@ -5,7 +5,6 @@ import { CoffeecornerRoutingModule } from './coffeecorner-routing.module';
 import { CoffeecornerComponent } from './coffeecorner.component';
 import { JunkyComponent } from './junky/junky.component';
 import { PinPadComponent } from './pin-pad/pin-pad.component';
-import { ImageComponent } from './image/image.component';
 
 @NgModule({
   imports: [
@@ -15,8 +14,7 @@ import { ImageComponent } from './image/image.component';
   declarations: [
     JunkyComponent,
     PinPadComponent,
-    CoffeecornerComponent,
-    ImageComponent
+    CoffeecornerComponent
   ],
   exports: [
     CoffeecornerRoutingModule
